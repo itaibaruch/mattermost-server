@@ -608,34 +608,34 @@ export default class SidebarHeaderDropdown extends React.Component {
                     onClick={this.toggleDropdown}
                 />
                 <Dropdown.Menu>
-                    {accountSettings}
-                    {inviteDivider}
-                    {inviteLink}
-                    {teamLink}
-                    {addMemberToTeam}
-                    {teamDivider}
-                    {teamSettings}
-                    {manageLink}
-                    {teams}
-                    {backstageDivider}
-                    {integrationsLink}
-                    {customEmoji}
-                    {sysAdminDivider}
-                    {sysAdminLink}
-                    {helpDivider}
-                    {helpLink}
+                    {/*{accountSettings}*/}
+                    {/*{inviteDivider}*/}
+                    {/*{inviteLink}*/}
+                    {/*{teamLink}*/}
+                    {/*{addMemberToTeam}*/}
+                    {/*{teamDivider}*/}
+                    {/*{teamSettings}*/}
+                    {/*{manageLink}*/}
+                    {/*{teams}*/}
+                    {/*{backstageDivider}*/}
+                    {/*{integrationsLink}*/}
+                    {/*{customEmoji}*/}
+                    {/*{sysAdminDivider}*/}
+                    {/*{sysAdminLink}*/}
+                    {/*{helpDivider}*/}
+                    {/*{helpLink}*/}
                     {keyboardShortcuts}
-                    {reportLink}
+                    {/*{reportLink}*/}
                     {nativeAppLink}
-                    {about}
+                    {/*{about}*/}
                     {logoutDivider}
                     {logout}
-                    {teamMembersModal}
-                    <AboutBuildModal
-                        show={this.state.showAboutModal}
-                        onModalDismissed={this.aboutModalDismissed}
-                    />
-                    {addUsersToTeamModal}
+                    {/*{teamMembersModal}*/}
+                    {/*<AboutBuildModal*/}
+                        {/*show={this.state.showAboutModal}*/}
+                        {/*onModalDismissed={this.aboutModalDismissed}*/}
+                    {/*/>*/}
+                    {/*{addUsersToTeamModal}*/}
                 </Dropdown.Menu>
             </Dropdown>
         );

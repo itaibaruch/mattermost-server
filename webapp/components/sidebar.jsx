@@ -807,7 +807,7 @@ export default class Sidebar extends React.Component {
             </OverlayTrigger>
         );
 
-        if (!ChannelUtils.showCreateOption(Constants.OPEN_CHANNEL, isTeamAdmin, isSystemAdmin)) {
+        if (!ChannelUtils.showCreateOption(Constants.OPEN_CHANNEL, isTeamAdmin, isSystemAdmin) || true) {
             createPublicChannelIcon = null;
         }
 
@@ -828,7 +828,7 @@ export default class Sidebar extends React.Component {
             </OverlayTrigger>
         );
 
-        if (!ChannelUtils.showCreateOption(Constants.PRIVATE_CHANNEL, isTeamAdmin, isSystemAdmin)) {
+        if (!ChannelUtils.showCreateOption(Constants.PRIVATE_CHANNEL, isTeamAdmin, isSystemAdmin) || true) {
             createPrivateChannelIcon = null;
         }
 
@@ -877,6 +877,10 @@ export default class Sidebar extends React.Component {
                 id='sidebar-left'
                 key='sidebar-left'
             >
+                <div style={{height: '7rem',margin: '0 auto',width: '18rem'}}>
+                    <img src="http://gls.dplusc.de/themes/custom/gls/logo.svg" alt=""
+                         style={{height: '7rem',padding: '0.7rem'}} />
+                </div>
                 <NewChannelFlow
                     show={showChannelModal}
                     channelType={this.state.newChannelModalType}
